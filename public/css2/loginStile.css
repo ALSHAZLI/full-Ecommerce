@@ -1,0 +1,124 @@
+/*--------------------------------------
+*********** MODAL ***********
+--------------------------------------*/
+
+.modal {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-body h3 {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.btn-face, .btn-gp, .btn-tw {
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.btn-face:hover, .btn-gp:hover, .btn-tw:hover {
+    color: #fff;
+}
+
+.btn-face .fa, .btn-gp .fa, .btn-tw .fa {
+    background: rgba(0,0,0,0.2);
+    font-size: 22px;
+    position: absolute;
+    width: 35px;
+    padding: 10px 0;
+    top: 0;
+}
+
+.btn-face {
+    background: #3b5998;
+}
+
+.btn-gp {
+    background: #dd4b39;
+}
+
+.btn-tw {
+    background: #55acee;
+}
+.e3lan{
+    padding-top: 0;
+}
+
+.btn.link {
+    padding: 4px 0;
+    text-decoration: underline;
+}
+
+/**  Check box + Radio button Style  **/
+
+.checkbox-holder, .radio-holder {
+    font-weight: 100;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.checkbox-holder span, .radio-holder span {
+    vertical-align: middle;
+}
+
+.checkbox-holder .checkbox-icon, .radio-holder .radio-icon {
+    width: 13px;
+    height: 13px;
+    line-height: 7px;
+    display: inline-block;
+    border: 1px solid #d4d4d4;
+    background: #fff;
+    text-align: center;
+}
+
+.checkbox-holder input[type="checkbox"], .radio-holder input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-holder .checkbox-icon:after, .radio-holder .radio-icon:after {
+    content: '';
+    background: #fff;
+    width: 7px;
+    height: 7px;
+    display: block;
+    margin: 2px;
+}
+
+.radio-icon, .radio-holder .radio-icon:after {
+    border-radius: 50%;
+}
+
+.checkbox-holder input[type="checkbox"]:checked + .checkbox-icon, .radio-holder input[type="radio"]:checked + .radio-icon {
+    border-color: #f06262;
+}
+
+.checkbox-holder input[type="checkbox"]:checked + .checkbox-icon:after, .radio-holder input[type="radio"]:checked + .radio-icon:after {
+    background: #f06262;
+}
+
+@media (min-width: 768px) {
+
+
+
+    .modal-dialog {
+        width: 700px;
+        margin: 50px auto;
+    }
+}

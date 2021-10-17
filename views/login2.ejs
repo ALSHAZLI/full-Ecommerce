@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login </title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-ar.css">
+</head>
+<body>
+    <div class="modal fade" id="logIN" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                  
+                    <h3 class="color-orange">تسجيل الدخول الى الحساب الخاص بك</h3>
+                    <h3>أو</h3>
+    
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <a href="#" class="btn btn-face btn-block"><i class="fa fa-facebook"></i> <span>تسجيل الدخول بالفيس بوك</span></a>
+                            <a href="#" class="btn btn-gp btn-block"><i class="fa fa-google-plus"></i> <span>تسجيل الدخول بحساب جوجل</span></a>
+                        </div>
+    
+                        <div class="col-xs-12 col-sm-6">
+                            <form autocomplete="off" action="/login" method="post">
+                                <input type="text" required type="text" name="username" placeholder="ادخل username">
+                                <input type="text" required type="password" name="password" placeholder="كلمة المرور">
+    
+                                <div class="clearfix">
+                                    <a href="#" class="btn link pull-right">هل نسيت كلمة المرور الخاصة بك؟</a>
+    
+                                    <label class="checkbox-holder pull-left">
+                                        <span>تذكر كلمة السر</span>
+                                        <input type="checkbox">
+                                        <span class="checkbox-icon"></span>
+                                    </label>
+                                </div>
+    
+                                <input type="submit" class="btn btn-orange btn-block" value="تسجيل الدخول">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

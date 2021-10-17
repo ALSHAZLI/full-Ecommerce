@@ -1,0 +1,180 @@
+body {
+    direction: rtl;
+    font: 14px 'JF-Flat', sans-serif;
+}
+
+select {
+    background: #fff url("../images/caret.png") no-repeat 10px center;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1,
+.col-xs-2, .col-sm-2, .col-md-2, .col-lg-2,
+.col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+.col-xs-4, .col-sm-4, .col-md-4, .col-lg-4,
+.col-xs-5, .col-sm-5, .col-md-5, .col-lg-5,
+.col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+.col-xs-7, .col-sm-7, .col-md-7, .col-lg-7,
+.col-xs-8, .col-sm-8, .col-md-8, .col-lg-8,
+.col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+.col-xs-10, .col-sm-10, .col-md-10, .col-lg-10,
+.col-xs-11, .col-sm-11, .col-md-11, .col-lg-11,
+.col-xs-12, .col-sm-12, .col-md-12, .col-lg-12,
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.btn-with-img img {
+    margin-right: 7px;
+}
+
+.right-fa {
+    margin-left: 5px;
+}
+
+.left-fa {
+    margin-right: 5px;
+}
+
+.dropdown-menu {
+    right: 0;
+    left: auto;
+    text-align: right;
+}
+
+.small-header .dropdown .dropdown-menu a:hover {
+    padding-right: 15px;
+}
+
+.cart a {
+    margin-left: 10px;
+}
+
+.navbar-toggle {
+    float: right;
+}
+
+.nav .dropdown-menu ul li a:hover {
+    padding-right: 5px;
+}
+
+.slider-block .customNavigation {
+    right: 9%;
+}
+
+.slider-block .owl-controls {
+    left: 9%;
+}
+
+
+
+.box-with-btn .btn {
+    display: none;
+    left: 20px;
+    transform-origin: bottom left;
+    -webkit-transform-origin: bottom left;
+    -moz-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    -o-transform-origin: bottom left;
+}
+
+.btn-face, .btn-gp, .btn-tw {
+    padding-left: 35px !important;
+}
+
+.btn-face .fa, .btn-gp .fa, .btn-tw .fa {
+    left: 0;
+}
+
+.nav.nav-tabs li {
+    float: right;
+}
+
+.nav.nav-tabs li a {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.breadcrumb > li + li::before {
+    content: "\f100";
+}
+
+.border-box ul.list-unstyled li a:hover {
+    padding-right: 6px;
+}
+
+.pagination li a, .pagination li span {
+    float: right;
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+    margin-left: -1px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.h-with-img {
+    padding-left: 20px;
+}
+
+.h-with-img img {
+    margin-left: 7px;
+}
+
+.label {
+    margin-right: 10px;
+}
+
+.btn span.pull-left {
+    left: 12px;
+}
+
+.sync-btn.owl-next-sync {
+    left: 20px;
+}
+
+.sync-btn.owl-prev-sync {
+    right: 20px;
+}
+
+/****/
+
+@media (min-width: 768px) {
+
+    .text-align-right {
+        text-align: right;
+    }
+
+    .text-align-left {
+        text-align: left;
+    }
+
+    .navbar-nav > li {
+        float: right;
+    }
+
+    .nav > li:not(:first-child) {
+        border-right: 1px solid #e4e4e4;
+    }
+
+    .small-header a:first-child {
+        padding-right: 0;
+    }
+
+    .small-header span.ltr {
+        padding-left: 0;
+    }
+
+}

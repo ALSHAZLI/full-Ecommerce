@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+
+    <title>جولى شيك - المتجر</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-ar.css">
+</head>
+
+<body id="top">
+
+<!--===============================
+    LOADER
+===================================-->
+
+<div class="pre-load">
+    <img src="images/icon.png" alt="Loading...">
+</div>
+
+
+
+
+<!--===============================
+    SMALL HEADER
+===================================-->
+
+<div class="small-header">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-8 text-align-right">
+                <a  data-toggle="modal" data-target="#logIN"><i class="fa fa-sign-in right-fa color-orange"></i> تسجيل الدخول</a>
+                <a  data-toggle="modal" data-target="#signUP"><i class="fa fa-user-plus right-fa color-orange"></i> حساب جديد</a>
+                <div class="dropdown">
+                    <a id="dD1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">US$ <i class="fa fa-angle-down"></i></a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dD1">
+                        <li><a href="#">US$</a></li>
+                        <li><a href="#">LE</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a id="dD2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">العربية <i class="fa fa-angle-down"></i></a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dD2">
+                        <li><a href="#">العربية</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 text-align-left">
+                <span class="ltr"><i class="fa fa-phone left-fa color-orange with-border"></i> + 966724440030</span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--===============================
+    HEADER
+===================================-->
+
+<header>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-3 text-align-right">
+                <a href="index.html"><img src="images/logo.png" alt="LOGO"></a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="ابحث عن المنتجات">
+                    <span class="input-group-btn">
+                        <button class="btn btn-orange sr" type="button"><i class="fa fa-search"></i></button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-3 text-align-left">
+                <div class="cart">
+                    <a href="cart.html" data-toggle="tooltip" data-placement="top" title="عربة التسوق"><img src="images/cart.png"></a>
+                    <span class="badge"><span>0</span></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+
+
+<!--===============================
+    NAV
+===================================-->
+
+<nav class="navbar">
+    <div class="container">
+        <div class="row">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                    <span class="fa fa-bars"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right text-center">
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">جديدنا <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <div class="dropdown-menu">
+                            <div class="col-xs-6 no-padding">
+                                <p>الأقسام الرئيسية</p>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">صفحة 1</a></li>
+                                    <li><a href="#">صفحة 2</a></li>
+                                    <li><a href="#">صفحة 3</a></li>
+                                    <li><a href="#">صفحة 4</a></li>
+                                    <li><a href="#">صفحة 5</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6 no-padding">
+                                <p>الأقسام الفرعيه</p>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">صفحة 1</a></li>
+                                    <li><a href="#">صفحة 2</a></li>
+                                    <li><a href="#">صفحة 3</a></li>
+                                    <li><a href="#">صفحة 4</a></li>
+                                    <li><a href="#">صفحة 5</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">الملابس</a></li>
+                    <li><a href="#">جولى المنزل</a></li>
+                    <li><a href="#">الأحزية & الحقائب</a></li>
+                    <li><a href="#">الأطفال & الألعاب</a></li>
+                    <li><a href="#">الإكسسوارات</a></li>
+                    <li><a href="#">عروض مؤقتة</a></li>
+                    <li><a href="#">تجربة مجانية</a></li>
+                    <li><a href="#">جولى صفقات</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+
+<!--===============================
+    CONTENT
+===================================-->
+
+<div class="div-padding border-black">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 text-align-right animate-box">
+                <h1 class="h-with-img"><img src="images/cart.png"> حقيبة التسوق</h1>
+
+                <ul class="list-inline list-unstyled">
+                    <li><img src="images/mastercart-icon.png"></li>
+                    <li><img src="images/visa-icon.png"></li>
+                    <li><img src="images/paypal-icon.png"></li>
+                </ul>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 text-align-left animate-box">
+                <a href="#" class="btn btn-orange sr">المتابعة للدفع</a>
+            </div>
+        </div>
+
+
+        <div class="animate-box table-box">
+            <table class="table cart-table">
+                <thead>
+                <tr>
+                    <th>معلومات البنود</th>
+                    <th>OPTIONS</th>
+                    <th>سعر الوحدة</th>
+                    <th>المجموع</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="table-view">
+                            <div class="table-cell xs-block product-img"><a href="product.html"><img src="images/pic-1.jpg"></a></div>
+                            <div class="table-cell xs-block">
+                                <p class="fa-2x"><a href="product.html">اسم المنتج</a></p>
+                                <p>البند رقم : <span class="color-gray">0B02510445H</span></p>
+
+                                <a href="#" class="color-black">الانتقال إلى قائمة المفضلات</a> <span class="right-fa left-fa">/</span> <a href="#">أزالة</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="text-center">
+                        <p>اللون: <span class="color-orange">ازرق</span></p>
+                        <p>الكمية: <span class="color-orange">2</span></p>
+                        <a href="#" class="btn btn-orange sr radius-20">تعديل</a>
+                    </td>
+                    <td class="text-center">
+                        <p class="color-orange">$13.99</p>
+                        <p><s>$15.99</s></p>
+                        <p>خصم <span class="color-orange">13%</span></p>
+                    </td>
+                    <td class="text-center">
+                        <span class="color-orange fa-2x">$27.98</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="table-view">
+                            <div class="table-cell xs-block product-img"><a href="product.html"><img src="images/pic-2.jpg"></a></div>
+                            <div class="table-cell xs-block">
+                                <p class="fa-2x"><a href="product.html">اسم المنتج</a></p>
+                                <p>البند رقم : <span class="color-gray">0B02510445H</span></p>
+
+                                <a href="#" class="color-black">الانتقال إلى قائمة المفضلات</a> <span class="right-fa left-fa">/</span> <a href="#">أزالة</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="text-center">
+                        <p>اللون: <span class="color-orange">ازرق</span></p>
+                        <p>الكمية: <span class="color-orange">2</span></p>
+                        <a href="#" class="btn btn-orange sr radius-20">تعديل</a>
+                    </td>
+                    <td class="text-center">
+                        <p class="color-orange">$13.99</p>
+                        <p><s>$15.99</s></p>
+                        <p>خصم <span class="color-orange">13%</span></p>
+                    </td>
+                    <td class="text-center">
+                        <span class="color-orange fa-2x">$27.98</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+
+<!--===========================-->
+
+
+<div class="container">
+
+    <div class="div-padding">
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-6 col-lg-5 animate-box">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3">
+                        <label class="radio-holder">
+                            <input type="radio" checked>
+                            <span class="radio-icon"></span>
+                            <span>كوبون</span>
+                        </label>
+                    </div>
+                    <div class="col-xs-12 col-sm-6"><input type="text" class="radius-20" placeholder="ادخل رمز القسيمة"></div>
+                    <div class="col-xs-12 col-sm-3"><button class="btn btn-orange sr radius-20 btn-big btn-block">تقديم</button></div>
+                </div>
+
+                <p class="margin">يمكنك استخدام المزيد من التخفيضات بعد <a href="#">تسجيل الدخول</a></p>
+
+                <a href="index.html" class="btn btn-with-img">الأستمرار فى التسوق <img src="images/cart.png"></a>
+            </div>
+
+
+            <div class="col-xs-12 col-sm-6 col-lg-4 col-lg-pull-1 animate-box">
+                <h3 class="color-orange no-margin">التفاصيل</h3>
+
+                <table class="table no-border">
+                    <tr>
+                        <td>إجمالي الكمية</td>
+                        <td>: 6</td>
+                    </tr>
+                    <tr>
+                        <td>إجمالي المنتجات</td>
+                        <td>: $99.94</td>
+                    </tr>
+                    <tr>
+                        <td>تكاليف الشحن</td>
+                        <td>: مقاس  واحد</td>
+                    </tr>
+                    <tr class="color-orange">
+                        <td>اجمالى الطلب</td>
+                        <td>: $99.94</td>
+                    </tr>
+                </table>
+
+
+                <div class="table-view text-align-right">
+                    <div class="table-cell"><a href="#" class="btn sr btn-orange">المتابعة للدفع</a></div>
+                    <div class="table-cell color-orange padding">أو</div>
+                    <div class="table-cell"><a href="#"><img src="images/check-out.png"></a></div>
+                </div>
+
+
+                <div class="table-view">
+                    <div class="table-cell label-cell">
+                        <label>الشحن الى </label>
+                    </div>
+                    <div class="table-cell">
+                        <select class="radius-20">
+                            <option>مصر</option>
+                            <option>مصر</option>
+                            <option>مصر</option>
+                            <option>مصر</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--===========================-->
+
+
+    <div class="div-padding">
+
+        <ul class="nav nav-tabs animate-box" role="tablist">
+            <li role="presentation" class="active"><a href="#tab-one" aria-controls="tab-one" role="tab" data-toggle="tab">قد تحتاج ايضا</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="tab-one">
+                <div class="row">
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 product-xs-12 animate-box">
+                        <div class="box">
+                            <a href="product.html"><img src="images/pic-1.jpg" alt="..."></a>
+
+                            <div class="inner-box text-center">
+                                <h3>جملة تعبريه</h3>
+                                <p>أحدث اكسسورات الموبيل </p>
+                                <a href="product.html" class="btn btn-gray btn-block"><s class=right-fa>US$150.00</s> <span class="left-fa">US$150.00</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 product-xs-12 animate-box">
+                        <div class="box">
+                            <a href="product.html"><img src="images/pic-2.jpg" alt="..."></a>
+
+                            <div class="inner-box text-center">
+                                <h3>جملة تعبريه</h3>
+                                <p>أحدث اكسسورات الموبيل </p>
+                                <a href="product.html" class="btn btn-gray btn-block"><s class="right-fa">US$150.00</s> <span class="left-fa">US$150.00</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 product-xs-12 animate-box">
+                        <div class="box">
+                            <a href="product.html"><img src="images/pic-3.jpg" alt="..."></a>
+
+                            <div class="inner-box text-center">
+                                <h3>جملة تعبريه</h3>
+                                <p>أحدث اكسسورات الموبيل </p>
+                                <a href="product.html" class="btn btn-gray btn-block"><s class="right-fa">US$150.00</s> <span class="left-fa">US$150.00</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-4 col-md-3 product-xs-12 animate-box">
+                        <div class="box">
+                            <a href="product.html"><img src="http://placehold.it/360x350" alt="...."></a>
+
+                            <div class="inner-box text-center">
+                                <h3>جملة تعبريه</h3>
+                                <p>أحدث اكسسورات الموبيل </p>
+                                <a href="product.html" class="btn btn-gray btn-block"><s class="right-fa">US$150.00</s> <span class="left-fa">US$150.00</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<!--===============================
+    FOOTER
+===================================-->
+
+<footer>
+    <div class="text-center"><a href="#top" class="btn btn-orange btn-top"><i class="fa fa-chevron-up"></i></a></div>
+    <div class="div-small-padding">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <h1>خدمة الموقع</h1>
+                    <ul class="list-unstyled">
+                        <li><a href="#">حول awamr.com</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <h1>الأسئلة & المساعدة</h1>
+                    <ul class="list-unstyled">
+                        <li><a href="#">كيفية الطلب</a></li>
+                        <li><a href="#">الأسئلة المتكررة</a></li>
+                        <li><a href="#">وسائل الدفع</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <h1>السياسة العامة</h1>
+                    <ul class="list-unstyled">
+                        <li><a href="#">سياسة الإرجاع</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <h1>سجل لتحصل على العروض </h1>
+                    <form>
+                        <label for="mail">أدخل بريدك الالكترونى</label>
+                        <input type="email" id="mail">
+                        <input type="submit" class="btn btn-orange btn-block" value="التسجيل">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<!--===============================
+    SMALL FOOTER
+===================================-->
+
+<div class="small-footer">
+    <div class="container">
+        <div class="clearfix">
+
+            <div class="col-xs-12 col-sm-4 no-padding text-align-right">
+                <p>جميع الحقوق محفوظة  2016 &copy;</p>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 no-padding text-center">
+                <a href="#"><img src="images/App_Store_Badge.png"></a>
+                <a href="#"><img src="images/google-play-badge.png"></a>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 no-padding text-align-left">
+                <a href="#"><img src="images/visa-icon.png"></a>
+                <a href="#"><img src="images/paypal-icon.png"></a>
+                <a href="#"><img src="images/mastercart-icon.png"></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--===============================
+    MODALS
+===================================-->
+
+<div class="modal fade" id="logIN" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3 class="color-orange">تسجيل الدخول الى الحساب الخاص بك</h3>
+                <h3>أو</h3>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <a href="#" class="btn btn-face btn-block"><i class="fa fa-facebook"></i> <span>تسجيل الدخول بالفيس بوك</span></a>
+                        <a href="#" class="btn btn-gp btn-block"><i class="fa fa-google-plus"></i> <span>تسجيل الدخول بحساب جوجل</span></a>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                        <form>
+                            <input type="text" placeholder="ادخل عنوان البريد الإلكتروني">
+                            <input type="text" placeholder="كلمة المرور">
+
+                            <div class="clearfix">
+                                <a href="#" class="btn link pull-right">هل نسيت كلمة المرور الخاصة بك؟</a>
+
+                                <label class="checkbox-holder pull-left">
+                                    <span>تذكر كلمة السر</span>
+                                    <input type="checkbox">
+                                    <span class="checkbox-icon"></span>
+                                </label>
+                            </div>
+
+                            <input type="submit" class="btn btn-orange btn-block" value="تسجيل الدخول">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--================================-->
+
+
+<div class="modal fade" id="signUP" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3 class="color-orange">انضم الينا!</h3>
+                <h3>أو</h3>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <a href="#" class="btn btn-face btn-block"><i class="fa fa-facebook"></i> <span>تسجيل الدخول بالفيس بوك</span></a>
+                        <a href="#" class="btn btn-gp btn-block"><i class="fa fa-google-plus"></i> <span>تسجيل الدخول بحساب جوجل</span></a>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                        <form>
+                            <input type="text" placeholder="ادخل عنوان البريد الإلكتروني">
+                            <input type="text" placeholder="كلمة المرور">
+                            <input type="text" placeholder="تأكيد كلمة المرور">
+
+                            <div>
+                                <label class="checkbox-holder">
+                                    <input type="checkbox">
+                                    <span class="checkbox-icon"></span>
+                                    <span>نعم، أرسل لي رسائل البريد الإلكتروني حول العروض الخاصة  والحصرية و الترويجية</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label class="checkbox-holder">
+                                    <input type="checkbox">
+                                    <span class="checkbox-icon"></span>
+                                    <span>لقد قرأت ووافقت على  <a href="#">العضوية</a></span>
+                                </label>
+                            </div>
+
+                            <input type="submit" class="btn btn-orange btn-block" value="تسجيل">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--===============================
+    SCRIPT
+===================================-->
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
