@@ -69,6 +69,41 @@ app.get("/login2", (req, res) => {
   res.render('login2.ejs')
 
 });
+/////////////////////////////////////////////////////////////
+
+// this for prodction server leater 
+// hear i put limit for request using this libarery  const getRawBody = require('raw-body')
+// If there is no limit on the size of requests, attackers can send requests with large request bodies that can exhaust server memory and/or fill disk space
+// app.use(function (req, res, next) {
+//   if (!['POST', 'PUT', 'DELETE'].includes(req.method)) {
+//     next()
+//     return
+//   }
+
+//   getRawBody(req, {
+//     length: req.headers['content-length'],
+//     limit: '1kb',
+//     encoding: contentType.parse(req).parameters.charset
+//   }, function (err, string) {
+//     if (err) return next(err)
+//     req.text = string
+//     next()
+//   })
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////
 
 // route for Home-Page
 app.get("/", (req, res) => {
