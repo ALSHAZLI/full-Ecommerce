@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 const app = express();
 app.set('view engine','ejs');
-
+const flash = require('connect-flash');
 const { check , validationResult  } = require('express-validator');
 const morgan = require('morgan');
 const bodyParser = require('body-Parser');
@@ -14,6 +14,7 @@ const { MONGO_URL } = require('./conf');
 const User = require('./models/User');
 // const Products = require('./models/productinit');
 const Product = require('./models/products');
+const ProductsController = require('./Controller/ProductsController');
 
 const bcrypt =require('bcrypt');
 app.use(express.json());
@@ -44,6 +45,8 @@ app.use(
     },
   })
 );
+
+app.use(flash());
 
 // This middleware will check if user's cookie is still saved in browser and user is not set, then automatically log the user out.
 // This usually happens when you stop your express server after login, your cookie still remains saved in the browser.
@@ -77,52 +80,49 @@ app.get("/", (req, res) => {
   res.redirect('/ho');
 
 });
-app.get("/ho",async (req, res) => {
-  try {
-    const result = await Product.find();
-    
-    var productGrid = [];
-    var colGrid = 4;
-    for(var i = 0;i<result.length;i++){
-      productGrid.push( result.slice(i,i+colGrid))
-    };
-   
-    res.render('index2',{ products: result ,success:''});
-
-  } catch (error) {
-    console.log(error);
-  }
- 
-});
+app.get("/ho",ProductsController.getAllProducts);
 
 // route for user signup
 app
-  .route("/Register",[
-    check('username').not().isEmpty().withMessage('pleas inter email her boss')
-  ])
+  .route("/Register")
   .get(sessionChecker, (req, res) => {
-    res.sendFile(__dirname + "/public/Register.html");
+    var massegesError = req.flash('error');
+    res.sendFile(__dirname + "/public/Register.html",{ masseges : massegesError });
   })
-  .post((req, res) => {
-    
+  .post([
+    check('username').isLength({ min:5 }).withMessage('username is less than 5 charactecrs'),
+    check('email').isEmail().withMessage('pleas inter valid email')
+  ],(req, res) => {
+    const errors = validationResult(req);
+    if(!errors.isEmpty()){
+      var validationMasseges = [];
+      for(var i=0;i<errors.errors.length ;i++){
+        validationMasseges.push(errors.errors[i].msg)
+      }
+      console.log(validationMasseges);
+      return;
+    };
     var user = new User({
       username: req.body.username,
       email: req.body.email,
       password:req.body.password,
     });
 
-    user.save(async(err, docs) => {
+    user.save( async(err, docs) => {
       if (!err) {
         res.redirect("/ho");
         await res.status(200).json();
         console.log(docs)
         req.session.user = docs;
+
         
       } else {
         console.log(err);
         
+
+        
       }
-    });
+  });
   });
 
 
