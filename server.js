@@ -112,7 +112,8 @@ app
   .route("/Register")
   .get(sessionChecker, (req, res) => {
     var massegesError = req.flash('error');
-    res.sendFile(__dirname + "/public/Register.html",{ masseges : massegesError });
+    res.render('Register',{ masseges : massegesError });
+    console.log(massegesError);
   })
   .post([
     check('username').isLength({ min:5 }).withMessage('username is less than 5 charactecrs'),
@@ -124,7 +125,13 @@ app
       for(var i=0;i<errors.errors.length ;i++){
         validationMasseges.push(errors.errors[i].msg)
       }
-      console.log(validationMasseges);
+      req.flash('error',validationMasseges)
+      for(let val of validationMasseges){
+        console.log(val);
+      }
+      res.redirect('/Register');
+      
+      
       return;
     };
     var user = new User({
@@ -142,6 +149,7 @@ app
 
         
       } else {
+        res.redirect('/Register');
         console.log(err);
         
 
